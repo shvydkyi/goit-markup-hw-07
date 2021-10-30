@@ -1065,6 +1065,11 @@ background: var(--accent-color);
 border: none;
 }
 
+.modal-checkbox:hover + .check-text span,
+.modal-checkbox:focus + .check-text span {
+  border-color: var(--accent-color);
+}
+
 
 .check-text {
 font-weight: 400;
