@@ -288,7 +288,7 @@ transition: color var(--trans-duration) var(--transit-timing-function);
  }
 
   .hero__btn, .btn-active,
-  .subscribe-btn {
+  .subscribe__btn {
   transition: color var(--trans-duration) var(--transit-timing-function),
   background-color var(--trans-duration) var(--transit-timing-function),
   box-shadow var(--trans-duration) var(--transit-timing-function);
@@ -515,12 +515,12 @@ color: var(--secondary-text-color);
 
 
 
-.client-section {
+.clients-section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.client-section-title {
+.clients-section__title {
 margin-top: 0;
 margin-bottom: 50px;
 font-weight: 700;
@@ -530,18 +530,18 @@ letter-spacing: 0.03em;
 text-align: center;
 }
 
-.client-list {
-  margin: 0;
-  padding: 0;
+.clients__list {
   display: flex;
   justify-content: center;
+  margin: 0;
+  padding: 0;
 }
 
-.client-item:not(:last-child) {
+.clients__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.client-company {
+.clients__company {
   display: flex;
   width: 170px;
   height: 92px;
@@ -555,8 +555,8 @@ text-align: center;
 
 }
 
-.client-company:hover,
-.client-company:focus {
+.clients__company:hover,
+.clients__company:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -565,23 +565,23 @@ text-align: center;
 /* --------------------Футер-------------------------- */
 
 
-.footer-section {
+.footer__section {
 padding-top: 60px;
 padding-bottom: 60px;
 background-color: var(--background-color);
 }
 
-.footer-container {
+.footer__container {
   display: flex;
   align-items: baseline;
   
 }
 
-.footer-contact {
+.footer__contacts {
   margin-right: 70px;
 }
 
-.footer-logo {
+.footer__logo {
 display: block;
   font-family: Raleway;
   font-style: normal;
@@ -595,11 +595,11 @@ display: block;
 
 
 
-.footer-adress-list {
+.footer-adress__item {
 margin-bottom: 9px;
 }
 
-.footer-adress {
+.footer-adress__link {
 display: block;
 font-style: normal;
 font-size: 14px;
@@ -609,11 +609,11 @@ color: var(--primary-white-color);
 transition: color var(--trans-duration) var(--transit-timing-function);
 }
 
-.footer-contacts-list:not(:last-child) {
+.footer-contacts__item:not(:last-child) {
 margin-bottom: 6px;
 }
 
-.footer-contacts {
+.footer-contacts__link {
 display: block;
 font-style: normal;
 font-size: 14px;
@@ -623,19 +623,19 @@ color: var(--footer-contact-color);
 transition: color var(--trans-duration) var(--transit-timing-function);
 }
 
-.footer-adress:hover,
-.footer-adress:focus,
-.footer-contacts:hover,
-.footer-contacts:focus {
+.footer-adress__link:hover,
+.footer-adress__link:focus,
+.footer-contacts__link:hover,
+.footer-contacts__link:focus {
   color: var(--accent-color);
 }
 
-.footer-soc-section {
+.footer-soc__section {
   align-items: baseline;
   text-align: left;
 }
 
-.footer-join, .subscribe {
+.footer-soc__title, .subscribe__title {
   display: inline-block; 
   margin-top: 0;
   margin-bottom: 20px;
@@ -648,21 +648,21 @@ transition: color var(--trans-duration) var(--transit-timing-function);
 }
 
 
-.footer-soc-list {
+.footer-soc__list {
   padding: 0;
   display: flex;
 }
 
-.footer-soc-item {
+.footer-soc__item {
   margin-right: 10px;
   justify-content: center;
 }
 
-.footer-soc-item:last-child {
+.footer-soc__item:last-child {
   margin-right: 0;
 }
 
-.footer-soc-link {
+.footer-soc__link {
   display: flex;
   background-color: rgba(255, 255, 255, 0.1);
   width: 44px;
@@ -673,7 +673,7 @@ transition: color var(--trans-duration) var(--transit-timing-function);
   transition: background-color var(--trans-duration) var(--transit-timing-function);
 }
 
-.subscribe-section {
+.subscribe__section {
 margin-left: auto;
 }
 
@@ -682,11 +682,11 @@ fill: var(--primary-white-color);
 margin-left: 10px;
 }
 
-.subscribe-form {
+.subscribe__form {
   display: flex;
 }
 
-.subscribe-btn {
+.subscribe__btn {
   display: flex;
   font-size: 16px;
   font-style: normal;
@@ -705,7 +705,7 @@ margin-left: 10px;
   margin-left: 12px;
 }
 
-.subscribe-field {
+.subscribe__field {
   width: 358px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
@@ -722,22 +722,22 @@ margin-left: 10px;
 
 
 
-.subscribe-field:hover,
-.subscribe-field:focus {
+.subscribe__field:hover,
+.subscribe__field:focus {
  border-color: var(--accent-color);
 }
 
-.subscribe-btn:hover,
-.subscribe-btn:focus {
+.subscribe__btn:hover,
+.subscribe__btn:focus {
 background-color: var(--btn-color);
 }
 
-.footer-soc-link:hover,
-.footer-soc-link:focus {
+.footer-soc__link:hover,
+.footer-soc__link:focus {
   background-color: var(--accent-color)
 }
 
-.footer-soc-icon {
+.footer-soc__icon {
   fill: var(--primary-white-color)
 }
 
