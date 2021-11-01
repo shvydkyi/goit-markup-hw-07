@@ -908,12 +908,10 @@ color: var(--secondary-text-color);
   position: fixed;
   top: 0;
   left: 0;
-
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
-
   transition: opacity var(--trans-duration) var(--transit-timing-function),
   visibility var(--trans-duration) var(--transit-timing-function);
 }
@@ -931,11 +929,9 @@ padding: 40px;
 top: 50%;
 left: 50%;
 transform: translate(-50%, -50%) scale(1);
-
 width: 528px;
 min-height: 581px;
 background-color: var(--primary-white-color);
-
 border-radius: 4px;
 transition: transform var(--trans-duration) var(--transit-timing-function);
 }
@@ -944,14 +940,14 @@ transition: transform var(--trans-duration) var(--transit-timing-function);
   transform: translate(-50%, -50%) scale(0.9);
 }
 
-.svg-close {
+.modal__svg-close {
   width: 18px;
   height: 18px;
   fill: #000000;
   transition: fill var(--trans-duration) var(--transit-timing-function);
 }
 
-.btn-close {
+.modal__btn-close {
 position: absolute;
 top: 8px;
 right: 8px;
@@ -969,12 +965,12 @@ background var(--trans-duration) var(--transit-timing-function),
 border var(--trans-duration) var(--transit-timing-function);
 }
 
-.btn-close:hover .svg-close, 
-.btn-close:focus .svg-close {
+.modal__btn-close:hover .modal__svg-close, 
+.modal__btn-close:focus .modal__svg-close {
 fill: var(--accent-color);
 }
 
-.modal-title {
+.modal__title {
 font-size: 20px;
 font-weight: 700;
 line-height: calc(23 / 20);
@@ -988,12 +984,12 @@ margin-bottom: 12px;
   margin-bottom: 10px;
 }
 
-.modal-field-text {
+.modal-field-comments {
   margin-bottom: 20px;
 }
 
 
-.input-label {
+.modal-field__label {
 font-size: 12px;
 font-weight: 400;
 line-height: calc(14 / 12);
@@ -1003,12 +999,12 @@ display: block;
 margin-bottom: 4px;
 }
 
-.input-wrapper {
+.modal-field__input-wrapper {
 display: block;
 position: relative;
 }
 
-.modal-input {
+.modal-field__input {
 width: 100%;
 height: 40px;
 border-radius: 4px;
@@ -1022,7 +1018,7 @@ transition: border-color var(--trans-duration) var(--transit-timing-function),
 backgroud var(--trans-duration) var(--transit-timing-function);
 }
 
-.input-icon {
+.modal-field__icon {
 position: absolute;
 left: 15px;
 top: 50%;
@@ -1030,17 +1026,17 @@ transform: translateY(-50%);
 transition: fill var(--trans-duration) var(--transit-timing-function);  
 }
 
-.modal-input:hover + .input-icon,
-.modal-input:focus + .input-icon {
+.modal-field__input:hover + .modal-field__icon,
+.modal-field__input:focus + .modal-field__icon {
 fill: var(--accent-color);
 }
 
-.modal-input:hover,
-.modal-input:focus {
+.modal-field__input:hover,
+.modal-field__input:focus {
 border-color: var(--accent-color);
 }
 
-.modal-text-input {
+.modal-field__text-input {
 width: 100%;
 height: 120px;
 border: 1px solid rgba(33, 33, 33, 0.2);
@@ -1057,23 +1053,23 @@ border var(--trans-duration) var(--transit-timing-function),
 border-color var(--trans-duration) var(--transit-timing-function);
 }
 
-.modal-text-input:hover,
-.modal-text-input:focus {
+.modal-field__text-input:hover,
+.modal-field__text-input:focus {
 border-color: var(--accent-color);
 }
 
-.modal-checkbox {
+.modal__checkbox {
 background: var(--accent-color);
 border: none;
 }
 
-.modal-checkbox:hover + .check-text span,
-.modal-checkbox:focus + .check-text span {
+.modal__checkbox:hover + .modal__check-text span,
+.modal__checkbox:focus + .modal__check-text span {
   border-color: var(--accent-color);
 }
 
 
-.check-text {
+.modal__check-text {
 font-weight: 400;
 font-size: 14px;
 line-height: calc(24 / 14);
@@ -1085,7 +1081,7 @@ align-items: center;
 justify-content: center;
 }
 
-.check-text span {
+.modal__check-text span {
 display: flex;
 align-items: center;
 justify-content: center;
@@ -1097,19 +1093,19 @@ margin-right: 9px;
 transition: border var(--trans-duration) var(--transit-timing-function);
 }
 
-.modal-checkbox:checked + .check-text span {
+.modal__checkbox:checked + .modal__check-text span {
 background: var(--accent-color);
 border: none;
 }
 
 
-.check-text span:hover,
-.check-text span:focus {
+.modal__check-text span:hover,
+.modal__check-text span:focus {
 border-color: var(--accent-color);
 }
 
 
-.check-icon {
+.modal__check-icon {
 width: 16px;
 height: 15px;
 border-color: var(--primary-text-color);
@@ -1129,7 +1125,7 @@ text-decoration: underline;
 color: var(--accent-color);
 }
 
-.modal-btn {
+.modal__btn {
 display: block;
 margin: 0 auto;
 font-family: inherit;
@@ -1151,7 +1147,7 @@ color var(--trans-duration) var(--transit-timing-function),
 box-shadow var(--trans-duration) var(--transit-timing-function);
 }
 
-.modal-btn:hover,
-.modal-btn:focus {
+.modal__btn:hover,
+.modal__btn:focus {
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
