@@ -287,7 +287,7 @@ transition: color var(--trans-duration) var(--transit-timing-function);
   padding: 10px 32px;
  }
 
-  .hero__btn, .btn-active,
+  .hero__btn, .projects__btn-active,
   .subscribe__btn {
   transition: color var(--trans-duration) var(--transit-timing-function),
   background-color var(--trans-duration) var(--transit-timing-function),
@@ -745,26 +745,26 @@ background-color: var(--btn-color);
 
 /* Фильтр-кнопки */
 
-.btn-projects-section {
+.projects__section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.btn-list {
+.projects__btn-list {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
 }
 
-.btn-item:not(:last-child) {
+.projects__btn-item:not(:last-child) {
   margin-right: 8px;
 }
 
-.btn-all,
-.btn-web,
-.btn-app,
-.btn-design,
-.btn-marketing {
+.projects__btn-all,
+.projects__btn-web,
+.projects__btn-app,
+.projects__btn-design,
+.projects__btn-marketing {
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -780,18 +780,18 @@ padding: 6px 22px;
 min-width: 73px;
 }
 
-.btn-all:hover,
-.btn-all:focus,
-.btn-web:hover,
-.btn-web:focus,
-.btn-app:hover,
-.btn-app:focus,
-.btn-design:hover,
-.btn-design:focus,
-.btn-marketing:hover,
-.btn-marketing:focus,
-.btn-active:hover,
-.btn-active:focus {
+.projects__btn-all:hover,
+.projects__btn-all:focus,
+.projects__btn-web:hover,
+.projects__btn-web:focus,
+.projects__btn-app:hover,
+.projects__btn-app:focus,
+.projects__btn-design:hover,
+.projects__btn-design:focus,
+.projects__btn-marketing:hover,
+.projects__btn-marketing:focus,
+.projects__btn-active:hover,
+.projects__btn-active:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12);
@@ -801,7 +801,7 @@ min-width: 73px;
 
 
 
-.btn-list .btn-all.current {
+.projects__btn-list .current {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
 }
@@ -833,9 +833,7 @@ min-width: 73px;
   left: 0;
   width: 100%;
   height: 100%;
-
   background: rgba(33, 150, 243, 0.9);
-
   transform: translateY(101%);
   transition: var(--trans-duration) var(--transit-timing-function);
 }
