@@ -1,0 +1,50 @@
+.services__section {
+  padding-bottom: 94px;
+}
+
+.services__title,
+.team__title {
+  margin-top: 0;
+  margin-bottom: 50px;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  color: var(--primary-text-color);
+}
+
+.services__list {
+  display: flex;
+}
+
+.services__thumb {
+  position: relative;
+}
+
+.services__item {
+  flex-basis: calc(100% - 2 * 30px / 3);
+}
+
+.services__item:not(:last-child) {
+  margin-right: var(--card-set-gap);
+}
+
+.services__text {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  text-transform: uppercase;
+  color: var(--primary-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  height: 70px;
+  width: 100%;
+}

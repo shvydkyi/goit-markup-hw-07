@@ -1,0 +1,46 @@
+.logo {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  margin-right: 93px;
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+.logo--black {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-text-color);
+  transition: color var(--trans-duration) var(--transit-timing-function);
+}
+
+.logo-white {
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--primary-white-color);
+  transition: color var(--trans-duration) var(--transit-timing-function);
+}
+
+.logo--black:hover,
+.logo--black:focus,
+.logo-white:hover,
+.logo-white:focus {
+  color: var(--accent-color);
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
