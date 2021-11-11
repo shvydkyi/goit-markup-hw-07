@@ -35,10 +35,10 @@
   justify-content: center;
   transition: fill var(--trans-duration) var(--transit-timing-function),
     border var(--trans-duration) var(--transit-timing-function);
-}
 
-.clients__company:hover,
-.clients__company:focus {
-  border: 1px solid var(--accent-color);
-  fill: var(--accent-color);
+  &:hover,
+  &:focus {
+    border: 1px solid var(--accent-color);
+    fill: var(--accent-color);
+  }
 }

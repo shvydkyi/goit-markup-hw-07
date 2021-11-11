@@ -53,19 +53,12 @@
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
-}
-
-.hero__btn,
-.projects__btn-active,
-.subscribe__btn {
   transition: color var(--trans-duration) var(--transit-timing-function),
     background-color var(--trans-duration) var(--transit-timing-function),
     box-shadow var(--trans-duration) var(--transit-timing-function);
-}
 
-.hero__btn:hover,
-.hero__btn:focus,
-.btn:hover,
-.btn:focus {
-  background-color: var(--btn-color);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-color);
+  }
 }

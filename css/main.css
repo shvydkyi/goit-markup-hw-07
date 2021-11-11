@@ -56,6 +56,14 @@ body {
   clip: rect(0 0 0 0);
 }
 
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+
 .page-header {
   border-bottom-width: 1px;
   border-bottom-style: solid;
@@ -125,6 +133,10 @@ body {
   transition: color var(--trans-duration) var(--transit-timing-function);
 }
 
+.header__link:hover, .header__link:focus {
+  color: var(--accent-color);
+}
+
 .header__contacts {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -162,16 +174,13 @@ body {
   transition: color var(--trans-duration) var(--transit-timing-function);
 }
 
+.header-contacts__link:hover, .header-contacts__link:focus {
+  color: var(--accent-color);
+}
+
 .header-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header__link:hover,
-.header__link:focus,
-.header-contacts__link:hover,
-.header-contacts__link:focus {
-  color: var(--accent-color);
 }
 
 .logo {
@@ -197,7 +206,11 @@ body {
   transition: color var(--trans-duration) var(--transit-timing-function);
 }
 
-.logo-white {
+.logo--black:hover, .logo--black:focus {
+  color: var(--accent-color);
+}
+
+.logo--white {
   font-family: Raleway;
   font-style: normal;
   font-weight: bold;
@@ -208,19 +221,19 @@ body {
   transition: color var(--trans-duration) var(--transit-timing-function);
 }
 
-.logo--black:hover,
-.logo--black:focus,
-.logo-white:hover,
-.logo-white:focus {
+.logo--white:hover, .logo--white:focus {
   color: var(--accent-color);
 }
 
-.list {
-  list-style: none;
-}
-
-.link {
-  text-decoration: none;
+.footer__logo {
+  display: block;
+  font-family: Raleway;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  color: var(--accent-color);
+  margin-bottom: 20px;
 }
 
 .hero {
@@ -284,21 +297,13 @@ body {
   display: inline-block;
   min-width: 200px;
   padding: 10px 32px;
-}
-
-.hero__btn,
-.projects__btn-active,
-.subscribe__btn {
   -webkit-transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
   transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
   transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), box-shadow var(--trans-duration) var(--transit-timing-function);
   transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), box-shadow var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
 }
 
-.hero__btn:hover,
-.hero__btn:focus,
-.btn:hover,
-.btn:focus {
+.hero__btn:hover, .hero__btn:focus {
   background-color: var(--btn-color);
 }
 
@@ -504,8 +509,7 @@ body {
   transition: backgroud-color var(--trans-duration) var(--transit-timing-function), fill var(--trans-duration) var(--transit-timing-function);
 }
 
-.soc-list__link:hover,
-.soc-list__link:focus {
+.soc-list__link:hover, .soc-list__link:focus {
   background-color: var(--accent-color);
   fill: var(--primary-white-color);
 }
@@ -559,8 +563,7 @@ body {
   transition: fill var(--trans-duration) var(--transit-timing-function), border var(--trans-duration) var(--transit-timing-function);
 }
 
-.clients__company:hover,
-.clients__company:focus {
+.clients__company:hover, .clients__company:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
 }
@@ -584,17 +587,6 @@ body {
   margin-right: 70px;
 }
 
-.footer__logo {
-  display: block;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
-  margin-bottom: 20px;
-}
-
 .footer-adress__item {
   margin-bottom: 9px;
 }
@@ -608,6 +600,10 @@ body {
   /* margin-bottom: 9px; */
   -webkit-transition: color var(--trans-duration) var(--transit-timing-function);
   transition: color var(--trans-duration) var(--transit-timing-function);
+}
+
+.footer-adress__link:hover, .footer-adress__link:focus {
+  color: var(--accent-color);
 }
 
 .footer-contacts__item:not(:last-child) {
@@ -625,10 +621,7 @@ body {
   transition: color var(--trans-duration) var(--transit-timing-function);
 }
 
-.footer-adress__link:hover,
-.footer-adress__link:focus,
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
+.footer-contacts__link:hover, .footer-contacts__link:focus {
   color: var(--accent-color);
 }
 
@@ -688,6 +681,10 @@ body {
   transition: background-color var(--trans-duration) var(--transit-timing-function);
 }
 
+.footer-soc__link:hover, .footer-soc__link:focus {
+  background-color: var(--accent-color);
+}
+
 .subscribe__section {
   margin-left: auto;
 }
@@ -723,6 +720,14 @@ body {
   border-radius: 4px;
   padding: 10px 28px;
   margin-left: 12px;
+  -webkit-transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
+  transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
+  transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), box-shadow var(--trans-duration) var(--transit-timing-function);
+  transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), box-shadow var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
+}
+
+.subscribe__btn:hover, .subscribe__btn:focus {
+  background-color: var(--btn-color);
 }
 
 .subscribe__field {
@@ -745,19 +750,8 @@ body {
   transition: border-color var(--trans-duration) var(--transit-timing-function);
 }
 
-.subscribe__field:hover,
-.subscribe__field:focus {
+.subscribe__field:hover, .subscribe__field:focus {
   border-color: var(--accent-color);
-}
-
-.subscribe__btn:hover,
-.subscribe__btn:focus {
-  background-color: var(--btn-color);
-}
-
-.footer-soc__link:hover,
-.footer-soc__link:focus {
-  background-color: var(--accent-color);
 }
 
 .footer-soc__icon {
@@ -801,6 +795,13 @@ body {
   cursor: pointer;
   padding: 6px 22px;
   min-width: 73px;
+}
+
+.projects__btn-active {
+  -webkit-transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
+  transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
+  transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), box-shadow var(--trans-duration) var(--transit-timing-function);
+  transition: color var(--trans-duration) var(--transit-timing-function), background-color var(--trans-duration) var(--transit-timing-function), box-shadow var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
 }
 
 .projects__btn-all:hover,
@@ -977,6 +978,11 @@ body {
   transition: fill var(--trans-duration) var(--transit-timing-function);
 }
 
+.modal__btn-close:hover .modal__svg-close,
+.modal__btn-close:focus .modal__svg-close {
+  fill: var(--accent-color);
+}
+
 .modal__btn-close {
   position: absolute;
   top: 8px;
@@ -998,11 +1004,6 @@ body {
   cursor: pointer;
   -webkit-transition: fill var(--trans-duration) var(--transit-timing-function), background var(--trans-duration) var(--transit-timing-function), border var(--trans-duration) var(--transit-timing-function);
   transition: fill var(--trans-duration) var(--transit-timing-function), background var(--trans-duration) var(--transit-timing-function), border var(--trans-duration) var(--transit-timing-function);
-}
-
-.modal__btn-close:hover .modal__svg-close,
-.modal__btn-close:focus .modal__svg-close {
-  fill: var(--accent-color);
 }
 
 .modal__title {
@@ -1052,6 +1053,10 @@ body {
   transition: border-color var(--trans-duration) var(--transit-timing-function), backgroud var(--trans-duration) var(--transit-timing-function);
 }
 
+.modal-field__input:hover, .modal-field__input:focus {
+  border-color: var(--accent-color);
+}
+
 .modal-field__icon {
   position: absolute;
   left: 15px;
@@ -1065,11 +1070,6 @@ body {
 .modal-field__input:hover + .modal-field__icon,
 .modal-field__input:focus + .modal-field__icon {
   fill: var(--accent-color);
-}
-
-.modal-field__input:hover,
-.modal-field__input:focus {
-  border-color: var(--accent-color);
 }
 
 .modal-field__text-input {
@@ -1088,8 +1088,7 @@ body {
   transition: background var(--trans-duration) var(--transit-timing-function), border var(--trans-duration) var(--transit-timing-function), border-color var(--trans-duration) var(--transit-timing-function);
 }
 
-.modal-field__text-input:hover,
-.modal-field__text-input:focus {
+.modal-field__text-input:hover, .modal-field__text-input:focus {
   border-color: var(--accent-color);
 }
 
@@ -1194,8 +1193,8 @@ body {
   transition: background var(--trans-duration) var(--transit-timing-function), color var(--trans-duration) var(--transit-timing-function), box-shadow var(--trans-duration) var(--transit-timing-function), -webkit-box-shadow var(--trans-duration) var(--transit-timing-function);
 }
 
-.modal__btn:hover,
-.modal__btn:focus {
+.modal__btn:hover, .modal__btn:focus {
+  background-color: var(--btn-color);
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }

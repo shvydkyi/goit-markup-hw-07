@@ -33,6 +33,12 @@
   min-width: 73px;
 }
 
+.projects__btn-active {
+  transition: color var(--trans-duration) var(--transit-timing-function),
+    background-color var(--trans-duration) var(--transit-timing-function),
+    box-shadow var(--trans-duration) var(--transit-timing-function);
+}
+
 .projects__btn-all:hover,
 .projects__btn-all:focus,
 .projects__btn-web:hover,

@@ -8,12 +8,12 @@
   opacity: 1;
   transition: opacity var(--trans-duration) var(--transit-timing-function),
     visibility var(--trans-duration) var(--transit-timing-function);
-}
 
-.backdrop.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
+  &.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
 }
 
 .modal {
@@ -27,10 +27,10 @@
   background-color: var(--primary-white-color);
   border-radius: 4px;
   transition: transform var(--trans-duration) var(--transit-timing-function);
-}
 
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(0.9);
+  .backdrop.is-hidden & {
+    transform: translate(-50%, -50%) scale(0.9);
+  }
 }
 
 .modal__svg-close {
@@ -38,6 +38,11 @@
   height: 18px;
   fill: #000000;
   transition: fill var(--trans-duration) var(--transit-timing-function);
+
+  .modal__btn-close:hover &,
+  .modal__btn-close:focus & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal__btn-close {
@@ -56,11 +61,6 @@
   transition: fill var(--trans-duration) var(--transit-timing-function),
     background var(--trans-duration) var(--transit-timing-function),
     border var(--trans-duration) var(--transit-timing-function);
-}
-
-.modal__btn-close:hover .modal__svg-close,
-.modal__btn-close:focus .modal__svg-close {
-  fill: var(--accent-color);
 }
 
 .modal__title {
@@ -108,6 +108,11 @@
   color: var(--secondary-text-color);
   transition: border-color var(--trans-duration) var(--transit-timing-function),
     backgroud var(--trans-duration) var(--transit-timing-function);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .modal-field__icon {
@@ -116,16 +121,11 @@
   top: 50%;
   transform: translateY(-50%);
   transition: fill var(--trans-duration) var(--transit-timing-function);
-}
 
-.modal-field__input:hover + .modal-field__icon,
-.modal-field__input:focus + .modal-field__icon {
-  fill: var(--accent-color);
-}
-
-.modal-field__input:hover,
-.modal-field__input:focus {
-  border-color: var(--accent-color);
+  .modal-field__input:hover + &,
+  .modal-field__input:focus + & {
+    fill: var(--accent-color);
+  }
 }
 
 .modal-field__text-input {
@@ -143,11 +143,11 @@
   transition: background var(--trans-duration) var(--transit-timing-function),
     border var(--trans-duration) var(--transit-timing-function),
     border-color var(--trans-duration) var(--transit-timing-function);
-}
 
-.modal-field__text-input:hover,
-.modal-field__text-input:focus {
-  border-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .modal__checkbox {
@@ -232,9 +232,10 @@
   transition: background var(--trans-duration) var(--transit-timing-function),
     color var(--trans-duration) var(--transit-timing-function),
     box-shadow var(--trans-duration) var(--transit-timing-function);
-}
 
-.modal__btn:hover,
-.modal__btn:focus {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  &:hover,
+  &:focus {
+    background-color: var(--btn-color);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  }
 }

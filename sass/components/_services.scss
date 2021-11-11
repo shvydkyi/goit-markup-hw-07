@@ -23,10 +23,10 @@
 
 .services__item {
   flex-basis: calc(100% - 2 * 30px / 3);
-}
 
-.services__item:not(:last-child) {
-  margin-right: var(--card-set-gap);
+  &:not(:last-child) {
+    margin-right: var(--card-set-gap);
+  }
 }
 
 .services__text {

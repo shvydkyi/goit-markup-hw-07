@@ -13,17 +13,6 @@
   margin-right: 70px;
 }
 
-.footer__logo {
-  display: block;
-  font-family: Raleway;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 26px;
-  line-height: 1.19;
-  color: var(--accent-color);
-  margin-bottom: 20px;
-}
-
 .footer-adress__item {
   margin-bottom: 9px;
 }
@@ -36,6 +25,11 @@
   color: var(--primary-white-color);
   /* margin-bottom: 9px; */
   transition: color var(--trans-duration) var(--transit-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contacts__item:not(:last-child) {
@@ -50,13 +44,11 @@
   color: var(--footer-contact-color);
   /* margin-bottom: 6px; */
   transition: color var(--trans-duration) var(--transit-timing-function);
-}
 
-.footer-adress__link:hover,
-.footer-adress__link:focus,
-.footer-contacts__link:hover,
-.footer-contacts__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-soc__section {
@@ -85,10 +77,10 @@
 .footer-soc__item {
   margin-right: 10px;
   justify-content: center;
-}
 
-.footer-soc__item:last-child {
-  margin-right: 0;
+  &:last-child {
+    margin-right: 0;
+  }
 }
 
 .footer-soc__link {
@@ -100,6 +92,11 @@
   justify-content: center;
   align-items: center;
   transition: background-color var(--trans-duration) var(--transit-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+  }
 }
 
 .subscribe__section {
@@ -132,6 +129,15 @@
   border-radius: 4px;
   padding: 10px 28px;
   margin-left: 12px;
+
+  transition: color var(--trans-duration) var(--transit-timing-function),
+    background-color var(--trans-duration) var(--transit-timing-function),
+    box-shadow var(--trans-duration) var(--transit-timing-function);
+
+  &:hover,
+  &:focus {
+    background-color: var(--btn-color);
+  }
 }
 
 .subscribe__field {
@@ -147,21 +153,11 @@
   color: var(--footer-contact-color);
   padding-left: 16px;
   transition: border-color var(--trans-duration) var(--transit-timing-function);
-}
 
-.subscribe__field:hover,
-.subscribe__field:focus {
-  border-color: var(--accent-color);
-}
-
-.subscribe__btn:hover,
-.subscribe__btn:focus {
-  background-color: var(--btn-color);
-}
-
-.footer-soc__link:hover,
-.footer-soc__link:focus {
-  background-color: var(--accent-color);
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
 }
 
 .footer-soc__icon {

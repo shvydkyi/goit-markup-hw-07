@@ -68,10 +68,10 @@
   align-items: center;
   transition: backgroud-color var(--trans-duration) var(--transit-timing-function),
     fill var(--trans-duration) var(--transit-timing-function);
-}
 
-.soc-list__link:hover,
-.soc-list__link:focus {
-  background-color: var(--accent-color);
-  fill: var(--primary-white-color);
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    fill: var(--primary-white-color);
+  }
 }

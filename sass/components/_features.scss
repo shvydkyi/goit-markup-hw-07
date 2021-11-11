@@ -29,10 +29,10 @@
 .features__item {
   flex-basis: calc(100% / 4 - var(--card-set-gap));
   margin-right: var(--card-set-gap);
-}
 
-.features__item:not(:nth-last-child) {
-  margin-right: var(--card-set-gap);
+  &:not(:nth-last-child) {
+    margin-right: var(--card-set-gap);
+  }
 }
 
 .features__icon {

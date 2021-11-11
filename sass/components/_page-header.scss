@@ -54,6 +54,11 @@
   padding-top: 32px;
   padding-bottom: 32px;
   transition: color var(--trans-duration) var(--transit-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header__contacts {
@@ -82,16 +87,14 @@
   display: flex;
   align-items: center;
   transition: color var(--trans-duration) var(--transit-timing-function);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-contacts__icon {
   margin-right: 10px;
   fill: currentColor;
-}
-
-.header__link:hover,
-.header__link:focus,
-.header-contacts__link:hover,
-.header-contacts__link:focus {
-  color: var(--accent-color);
 }
